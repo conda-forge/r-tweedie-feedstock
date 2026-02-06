@@ -1,4 +1,4 @@
-{% set version = "2.3.5" %}
+{% set version = "3.0.10" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/tweedie_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/tweedie/tweedie_{{ version }}.tar.gz
-  sha256: 983c745fee5a780d46e8dd04c2eb1c10cb2e222d3679654f0d6934d3db7b1c3e
+  sha256: a820ad6f3ecd66e82edbcffcdfbe7c5dc0ab8f2498046ff76039781b61a19cf6
 
 build:
-  number: 4
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
